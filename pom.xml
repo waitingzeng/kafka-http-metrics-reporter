@@ -69,6 +69,11 @@
             <artifactId>metrics-servlet</artifactId>
             <version>${metrics-core.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.indeed:java-dogstatsd-client</groupId>
+            <artifactId>2.0.11</artifactId>
+            <version>2.0.11</version>
+        </dependency>
 
         <!-- Testing -->
         <dependency>
