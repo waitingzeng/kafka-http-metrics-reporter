@@ -70,8 +70,8 @@
             <version>${metrics-core.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.indeed:java-dogstatsd-client</groupId>
-            <artifactId>2.0.11</artifactId>
+            <groupId>com.indeed</groupId>
+            <artifactId>java-dogstatsd-client</artifactId>
             <version>2.0.11</version>
         </dependency>
 
