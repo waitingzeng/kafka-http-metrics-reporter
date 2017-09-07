@@ -201,6 +201,7 @@ public class StatsDReporter extends AbstractPollingReporter implements MetricPro
 
   private void sendDouble(Dimension dim, double value) {
     if (dimensions.contains(dim)) {
+      log.info("metrics: {}, value: {}, targs: {}", parser.getName() + "." + dim.getDisplayName(), value, parser.getTags());
       statsd.gauge(parser.getName() + "." + dim.getDisplayName(), value, parser.getTags());
     }
   }
