@@ -79,6 +79,7 @@ public class StatsDReporter extends AbstractPollingReporter implements MetricPro
   public void run() {
     try {
       final long epoch = clock.time() / 1000;
+      log.info("run on epoch: {}, parser: {}", epoch, parser)
       if (parser == null) {
         createParser(getMetricsRegistry());
       }
